@@ -2,9 +2,9 @@
 
 	namespace KMS\FroalaEditorBundle\Service;
 
-	use Symfony\Component\Routing\Router;
+    use Symfony\Component\Routing\RouterInterface;
 
-	/**
+    /**
 	 * Class ParameterManager
 	 * @package KMS\FroalaEditorBundle\Service
 	 */
@@ -16,7 +16,7 @@
 		// -------------------------------------------------------------//
 
 		/**
-		 * @var \Symfony\Component\Routing\Router
+		 * @var \Symfony\Component\Routing\RouterInterface
 		 */
 		private $m_router;
 
@@ -27,7 +27,7 @@
 		/**
 		 * Constructor.
 		 */
-		public function __construct( Router $p_router )
+		public function __construct( RouterInterface $p_router )
 		{
 			// ------------------------- DECLARE ---------------------------//
 
